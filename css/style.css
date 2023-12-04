@@ -3,3 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+#app{
+  padding-top: 5rem;
+  width: 30%;
+  margin: auto;
+}
+
+#app ul{
+  list-style: none;
+}
+
+#app .done{
+  text-decoration: line-through;
+}

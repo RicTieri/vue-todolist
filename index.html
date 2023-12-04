@@ -12,8 +12,17 @@
 <body>
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-  <div id="app"></div>
-  
+  <div id="app">
+    <input type="text" v-model="newElement.text" id="todo_input" name="todo_input">
+    <div id="todolist">
+      <ul>
+        <li v-for="todo in list" :class=" todo.done ? 'done' : '' ">
+          {{todo.text}}
+        </li>
+      </ul>
+    </div>
+  </div>
+
   <script src="./js/script.js"></script>
 </body>
 
