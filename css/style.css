@@ -12,6 +12,28 @@
 
 #app h1{
   text-align: center;
+  margin-bottom: 1rem;
+}
+
+#app .taskbar{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#app .taskbar button{
+  margin-left: .5rem;
+  font-size: 1.3rem;
+  background: none;
+  border: none;
+}
+
+#app .taskbar button i{
+  color: rgba(3, 201, 36, 0.600)
+}
+
+#app .taskbar button i:hover{
+  color: rgba(3, 201, 36, 1)
 }
 
 #app input{
@@ -19,7 +41,6 @@
   padding: .5rem;
   border-radius: 8px;
   border: 2px solid rgba(128, 128, 128, 0.419);
-  margin-bottom: 1rem;
 }
 
 #app #todolist{
@@ -48,7 +69,16 @@
   color: transparent;
 }
 
+
 #app li:hover i{
-  color: rgba(255, 0, 0, 0.652);
+  color: rgba(60, 10, 10, 0.446);
   font-size: 1.2rem;
+}
+
+#app li i:hover{
+  color: rgba(60, 10, 10, 0.846);
+}
+
+#app i:hover {
+  scale: 1.1;
 }
