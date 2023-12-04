@@ -4,7 +4,7 @@ const { createApp } = Vue
     data() {
       return {
         newElement: {text: '', done: false},
-        list: [{text: 'a', done: false},{text: 'b', done: true},{text: 'c', done: false},],
+        list: [{text: 'andare in un posto', done: false},{text: 'costruire qualcosa', done: false},{text: 'fare una bella foto', done: false},],
       }
     },
     methods:{

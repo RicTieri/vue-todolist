@@ -10,10 +10,45 @@
   margin: auto;
 }
 
+#app h1{
+  text-align: center;
+}
+
+#app input{
+  width: 100%;
+  padding: .5rem;
+  border-radius: 8px;
+  border: 2px solid rgba(128, 128, 128, 0.419);
+  margin-bottom: 1rem;
+}
+
+#app #todolist{
+  background-color: rgba(211, 211, 211, 0.389);
+  padding: .5rem;
+  border-radius: 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
 #app ul{
+  padding-left: .25rem;
   list-style: none;
 }
 
 #app .done{
   text-decoration: line-through;
+}
+
+#app li {
+  padding: .25rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#app li i{
+  color: transparent;
+}
+
+#app li:hover i{
+  color: rgba(255, 0, 0, 0.652);
+  font-size: 1.2rem;
 }
