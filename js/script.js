@@ -9,7 +9,7 @@ createApp({
   },
   methods: {
     addToList(value) {
-      newTodo = {text: value.trim().toLowerCase(), done: false};
+      let newTodo = {text: value.trim().toLowerCase(), done: false};
       this.list.push(newTodo);
       this.newElement ='';
     },

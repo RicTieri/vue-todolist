@@ -24,8 +24,10 @@
     </div>
     <div id="todolist">
       <ul>
-        <li v-for="(todo, index) in list" :class=" todo.done ? 'done' : '' " @click="todo.done = !todo.done">
-          {{todo.text}}
+        <li v-for="(todo, index) in list">
+          <p :class=" todo.done ? 'done' : '' " @click="todo.done = !todo.done">
+            {{todo.text}}
+          </p>
           <span><i class="fa-solid fa-circle-xmark" @click="removeFromList(index)"></i></span>
         </li>
       </ul>
